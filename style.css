@@ -28,6 +28,17 @@ img {
     border-radius: 16px;
     box-shadow: 0 8px 20px 0 hsla(0,0%,0%,0.1);
 }
+.card:hover{
+    animation: move .4s;
+    animation-iteration-count: 4;
+}
+@keyframes move {
+    0% {margin-left: 0;}
+    25% {margin-left: 7px;}
+    50% {margin-left: 0;}
+    75% {margin-left: -7px;}
+    100% {margin-left: 0;}
+}
 h1{
     color: hsl(218, 44%, 22%);
     font-size: 1.5rem;
